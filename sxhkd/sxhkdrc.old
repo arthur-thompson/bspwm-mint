@@ -1,0 +1,29 @@
+# Reload functions
+super + Escape
+	"$XDG_CONFIG_HOME"/sxhkd/functions
+
+# brightness down
+XF86MonBrightnessDown
+	light -U 5
+
+# brightness up
+XF86MonBrightnessUp
+ 	light -A 5
+
+# brightness down small
+super + XF86MonBrightnessDown
+ 	light -U 1
+
+# brightness up small
+super + XF86MonBrightnessUp
+	light -A 1
+
+#Volume Control
+XF86AudioLowerVolume
+	amixer set Master 5%-
+
+XF86AudioRaiseVolume
+	amixer set Master 5%+
+
+XF86AudioMute
+        amixer set Master toggle
